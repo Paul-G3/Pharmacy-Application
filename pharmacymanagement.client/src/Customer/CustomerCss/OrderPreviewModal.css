@@ -1,0 +1,62 @@
+.OrderPreviewModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.order-preview-modal-content {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    animation: SuccessModalfadeIn 0.5s ease-in-out;
+    max-height: 500px;
+    position:relative;
+}
+
+.order-preview-modal-content > h1
+{
+    text-align:center;
+    margin-bottom:0.5rem;
+}
+
+.order-preview-header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 0.5fr;
+    gap: 1rem;
+}
+
+.order-preview-header > div 
+{
+    color:#116a6f;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.back-arrow-preview {
+    background-color:transparent;
+    border:none;
+    font-size: 1.8rem;
+    cursor:pointer;
+    color:mediumblue;
+}
+
+.back-arrow-preview:hover i { 
+    color:red;
+}
+
+.button-go-container
+{
+    position:absolute;
+    top:-5px;
+    left:-3px;
+}

@@ -1,0 +1,175 @@
+.manage-repeats
+{
+    padding:2rem;
+    overflow-y:auto;
+}
+
+
+
+.medication-items
+{
+    margin-top:1rem;
+    height:0;
+    overflow:hidden;
+}
+
+.open{
+    height:fit-content;
+}
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2.5fr 1fr 1fr 1.5fr;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.total
+{
+    text-align:center;
+}
+
+.place-order {
+    margin-top:2rem;
+    background-color: #116A6F;
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px 2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.total-vat, .total-price {
+    font-size:1.2rem;
+}
+
+.translate-icon {
+    transform: rotate(90deg);
+    transition: transform 0.3s linear;
+}
+
+.medication-heading {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2.5fr 1fr 1fr 1.5fr;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 5px;
+    color: #116A6F;
+}
+
+.box {
+    width: 100%;
+    display: grid;
+    grid-template-columns:2fr 1fr 1.5fr 0.5fr;
+    background-color: #90c3d4;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.button2 {
+    margin-right: 2%;
+    background-color: #116a6f;
+    font-size: 1.2rem;
+    border: 2px solid #116a6f;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 15px;
+}
+
+.prescription {
+    margin-left: 0.6rem;
+}
+
+.order-preview-items {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 0.5fr;
+    gap: 1rem;
+}
+
+.order-preview-container {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.repeats-history-headers span {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #116a6f
+}
+
+.total-amount-preview {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-top: 15px;
+}
+
+.history-med-customer {
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
+.repeat-history-bottom {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.place-order-preview-container {
+    text-align: center;
+    margin-top: 0.7rem;
+}
+/* Scrollbar styling */
+.order-preview-container::-webkit-scrollbar {
+    width: 7px; /* width of scrollbar */
+}
+
+.order-preview-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* track color */
+    border-radius: 10px;
+}
+
+.order-preview-container::-webkit-scrollbar-thumb {
+    background: #888; /* thumb color */
+    border-radius: 10px;
+}
+
+    .order-preview-container::-webkit-scrollbar-thumb:hover {
+        background: #555; /* darker on hover */
+    }
+
+.repeats-haeder {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 0.5fr;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #116A6F;
+}
+@media screen and (min-width:600px) {
+    .box, .div, .total, .medication-heading, .repeats-haeder {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .box, .div, .total, .medication-heading, .repeats-haeder {
+        width: 80%;
+    }
+}
+

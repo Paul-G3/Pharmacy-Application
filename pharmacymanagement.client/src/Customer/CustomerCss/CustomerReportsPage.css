@@ -1,0 +1,30 @@
+.reperts-page-container-customer
+{
+    padding:2rem 6rem;
+}
+
+.customer-report-filters {
+    display: flex;
+    justify-content:space-between
+}
+
+.report-header-customer
+{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr 1fr 1fr;
+}
+
+.medication-row-customer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+}
+
+.report-header-customer span {
+    color: #116A6F;
+    font-weight:bold;
+}
+
+.filter-container-customer i:hover
+{
+    color:red;
+}

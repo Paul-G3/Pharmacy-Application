@@ -1,0 +1,93 @@
+.dashboard-page-customer {
+    padding: 3em 0 0 7em;
+    width: 85vw;
+}
+
+
+.customer-quick-actions {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom:40px;
+}
+
+.customer-quick-action-header
+{
+    text-align:center;
+}
+
+.quick-actions-customes-divs-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding:1rem 0;
+}
+
+.action-customer {
+    width: 200px; 
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius:50px;
+    padding:15px 0;
+    cursor:pointer;
+}
+
+.actions-cards-customer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:20px;
+}
+
+.action-card-customer {
+    height: 150px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+}
+
+.action-card-customer > h3{
+    text-align:center;
+    font-weight:bolder;
+}
+
+.total-count-dashboard-customer
+{
+    text-align:center;
+}
+
+.total-count-dashboard-customer span
+{
+    font-size:2.5rem;
+    font-weight:bold;
+}
+
+.total-count-dashboard-customer i
+{
+    margin-left:10px; 
+    font-size:1.5rem;
+}
+
+.go-to-container-customer
+{
+    text-align:right;
+}
+
+.view-button-customer {
+    background-color: #116A6F;
+    color: white;
+    padding:8px 18px;
+    font-size:1rem;
+    cursor:pointer;
+}
+
+.view-button-customer:hover {
+    opacity:0.7;
+}
+
+.last-card-customer {
+    background-color: #3498db;
+    color:white;
+}
+
+.last-card-customer p 
+{
+    margin:1rem 0;
+}

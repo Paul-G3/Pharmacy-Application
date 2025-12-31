@@ -1,0 +1,122 @@
+.upload-box {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    width: 80%;
+    /*max-width: 700px;*/
+    margin: 4rem auto;
+    font-family: Arial;
+    transition: 0.3s ease-in-out;
+}
+
+.upload-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.icon-btn {
+    margin-right: 0.5rem;
+    background: #f0f0f0;
+    border: none;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.file-label {
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.file-info {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    padding: 2rem;
+    text-align: center;
+    color: #666;
+    position: relative;
+    cursor: pointer;
+}
+
+    .drop-zone p {
+        margin: 0.5rem 0;
+    }
+
+.file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-button-container
+{
+    display:flex;
+    justify-content:center;
+}
+
+.upload-btn {
+    background-color: #116A6F;
+    color:white;
+    font-size:1.5rem;
+    padding: 5px 5em;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+
+.process-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+    .process-container input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: #28a745; /* green checkbox */
+        cursor: pointer;
+    }
+
+    .process-container label {
+      font-size: 1rem;
+      color: #333;
+      cursor: pointer;      
+       margin-top: 3px;
+    }
+
+
+.upload-title {
+    margin: 0 0 1.5rem 0;
+    color: #116A6F;
+    text-align: center;
+}
+
+.file-preview-list
+{
+    margin-top: 1rem;
+}
+
+#file-icon-add {
+    color: rgba(0,0,0,0.6);
+    font-size: 1.6rem;
+}
+
+#file-icon-choose {
+    color: rgba(0,0,0,0.6);
+    font-size: 4rem;
+}

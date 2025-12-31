@@ -1,0 +1,100 @@
+.manage-allergies-container
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:2rem 5rem; 
+    width:90%;
+}
+
+/*allergy sekection*/
+.allergies-selection-container {
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    align-self: center;
+    cursor: pointer;
+}
+.allergies-conbo-box { 
+    flex:1;
+}
+
+.btn-add-allergy {
+    background-color: #116A6F;
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px 2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/*selected allergies*/
+.allergies-main-container
+{
+    display:flex; 
+    justify-content:center;
+    width:100%;
+}
+
+
+/*left container code*/
+.customer-allergies-container {
+    width:70%; 
+    min-height:60vh; 
+    margin-top:2.5rem;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding:15px;
+    border-radius:10px;
+}
+
+.selected-allergies-customer
+{
+    height:100%; 
+    overflow-y:auto;
+}
+
+.selected-allergy span 
+{
+    font-size:1.3rem;
+    margin-left:0.5rem;
+}
+
+.selected-allergy {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 50px 0 5px;
+    
+}
+
+.selected-allergies-title
+{
+    color: #116A6F;
+    text-align:center;
+}
+ 
+
+.delete-selected-allergy {
+    color: #116A6F;
+    font-size:1.2rem;
+    cursor:pointer;
+    transition:color 0.3s linear;
+}
+
+
+.delete-selected-allergy:hover
+{
+    color:orangered;
+}
+
+ 
+ 
+
+ 

@@ -1,0 +1,254 @@
+﻿.management-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.management-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    scroll-margin-top: 3em;
+/*    min-height: 100vh;*/
+}
+
+.save-btn[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.layout-custom-style {
+    overflow:hidden;
+}
+.close-btn,.save-btn {
+    cursor: pointer;
+    border: 1px solid #116A6F;
+    font-size: medium;
+    background-color: var(--warning);
+    padding: .5em 1em;
+    transition: all .2s ease-out;
+    font-weight: bold;
+    color:white;
+}
+.close-btn:hover{
+    background-color:var(--danger);
+    border:1px solid #90c3d4;
+/*    color:#116A6F;*/
+
+}
+.save-btn {
+    border: 1px solid #90c3d4;
+    background-color:#116A6F;
+    color:white;
+    transition:all .2s ease-out;
+}
+.save-btn:hover{
+     border: 1px solid #116A6F;
+    background-color:#90c3d4;
+    color:#116A6F;
+}
+.modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+} 
+
+.management-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+.add-search {
+    display: flex;
+    margin-bottom: 1em;
+    padding:0 1em;
+    height:2.5em;
+}
+.search-input {
+    width: 25%;
+    border-radius: 10px;
+    border: 1px solid #116A6F;
+    padding:.5em 1em;
+    outline:none;
+}
+.add-button {
+    background-color: #116A6F;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    width: 20%;
+    border:1px solid;
+    transition: all .2s ease-out 
+}
+.add-button:hover{
+    background: transparent;
+    border: 1px solid #116A6F;
+    color: #116a6f;
+   
+}
+
+.management-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.management-table th, .management-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.management-table th {
+    background-color: #f5f5f5;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.detail-label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+
+input, select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* Two‑column grid for modal body */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem; /* spacing between columns & rows */
+}
+
+.floating-nav {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+  align-items: flex-end;
+  pointer-events: none; /* allow buttons to control pointer via child rules */
+}
+
+.floating-btn {
+  pointer-events: auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #116A6F;
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.floating-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+}
+
+.floating-up {
+  background: #90c3d4;
+  color: #116A6F;
+}
+
+.floating-down {
+  background: #116A6F;
+  color: #fff;
+}
+
+/* label that appears to the left of the circular button */
+.floating-label {
+  position: absolute;
+  right: 66px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #222;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  display: inline-block;
+  opacity: 0.98;
+}
+
+/* small accessibility refinement */
+.floating-btn:focus {
+  outline: 3px solid rgba(17,106,111,0.2);
+}
+.management-page {
+    padding: 20px;
+    padding-bottom:0!important;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+    padding-bottom: 5rem; 
+}
+
+.management-section {
+  flex: 0 0 auto;
+  min-height: 90vh; /* tweak if you want taller baseline */
+}
+.management-section:last-child{
+    min-height:80vh;
+}
+.management-section > .management-table,
+.management-section > .employee-list,
+.management-section > .form-grid,
+.management-section > .add-search + .management-table {
+  max-height: calc(100vh - 320px); 
+  overflow: auto;
+}
+
+
+.management-section#employee,
+#employee.management-section {
+  min-height: auto;       /* let it shrink if needed so footer is visible */
+  max-height: none;
+}
+
+/* Employee inner list should be scrollable and sized so footer remains visible */
+.management-section#employee > .employee-list,
+#employee > .employee-list {
+  max-height: calc(100vh - 340px); /* leave extra room for footer/header */
+  overflow: auto;
+}
+
+/* Small viewport adjustments */
+@media (max-width: 900px) {
+  .management-section { min-height: 50vh; }
+  .management-section > .management-table,
+  .management-section > .employee-list {
+    max-height: calc(100vh - 360px);
+  }
+
+  /* make employee list slightly smaller on small screens */
+  #employee > .employee-list {
+    max-height: calc(100vh - 420px);
+  }
+}

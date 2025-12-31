@@ -1,0 +1,114 @@
+.customer-orders-page
+{
+    margin: 2rem 4rem;
+}
+
+.order-details-container
+{
+    margin-left:2rem;
+    margin-bottom:1.6rem;
+}
+
+.customer-order-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.items-heading {
+    margin: 1rem 0 0.2rem 0.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #116A6F;
+}
+
+.total-number-items
+{
+    text-align:center;
+    font-size:1.2rem;
+}
+
+.pagination-controls-customer {
+    display: flex;
+    justify-content: center;
+    margin: 1.4rem 0 2rem 0;
+    gap: 0.5rem;
+}
+
+.pagination-controls-customer .active 
+{
+    background:#116A6F;
+    color:white;
+    margin: 0 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size:1.2rem;
+    transition:0.2s ease-in;
+}
+
+.pagination-controls-customer .active:hover 
+{
+    background: gray;   /* hover effect */
+}
+
+.pagination-controls-customer button:not(.active) {
+    background: #90c3d4;   /* light gray background */
+    color: white;          
+    margin: 0 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size:1.2rem;
+    transition:0.2s ease-in;
+}
+
+.pagination-controls-customer button:not(.active):hover {
+    background: gray;   /* hover effect */
+}
+
+.customer-no-data-found
+{
+    text-align:center;
+    margin-top:1.5rem;
+    font-size:1.2rem;
+    
+}
+
+.history-order-customer
+{
+    margin-bottom:1rem;
+}
+
+.Ready {
+    background-color: #90CAF9;
+    color: #003C8F;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.Ordered {
+    background-color: #66BB6A;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.price-div
+{
+    color:blue;
+    font-weight:500;
+}
+
+.order-details-customer {
+    background-color: #116A6F;
+    color:white;
+    border-radius:10px;
+    font-size:1rem;
+    transition:0.3s;
+}
+
+.header-details {
+    padding-left: 28px;
+    font-size: 1.3rem;
+    color: #116A6F;
+    font-weight:bold;
+    margin-top:1.2rem;
+}

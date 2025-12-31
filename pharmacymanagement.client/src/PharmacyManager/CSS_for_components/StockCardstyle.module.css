@@ -1,0 +1,120 @@
+.med-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.3);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    border: 1px solid grey;
+}
+
+    .med-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+.mednameheader {
+    display: flex;
+    gap: .5em;
+    flex: 2;
+}
+
+.med-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.med-name {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #116A6F;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+}
+
+.med-info {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.med-info div {
+    min-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dots-menu {
+    cursor: pointer;
+    color: #666;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    padding: .3em .1em;
+}
+
+.dots-menu:hover {
+    background-color: #90c3d4;
+    color:#116A6F
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 4px;
+    z-index: 10;
+    width: 120px;
+    box-shadow: 0 4px 12px black;
+}
+
+.dropdown-menu div {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu div:hover {
+    background-color: #116A6F;
+    color: white;
+}
+
+.low-stock {
+    border-left: 4px solid #e74c3c;
+}
+
+.low-quantity {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-left: 4px;
+}
+.disabled-option {
+    color: gray!important;
+    cursor: not-allowed;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .med-info {
+        grid-template-columns: 1fr;
+    }
+
+    .med-name {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,284 @@
+.report {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #116a6f;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+    .header h1 {
+        color: #2c5aa0;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+.metadata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .selector select {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+    }
+
+.content h2 {
+    color: #116a6f;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* Group Selector Dropdown */
+.groupSelector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.groupDropdown {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    min-width: 200px;
+    font-size: 14px;
+}
+
+/* Group Content */
+.groupContent {
+    min-height: 400px;
+}
+
+.group {
+    margin-bottom: 40px;
+    page-break-inside: avoid;
+}
+
+    .group h3 {
+        background-color: #f0f5ff;
+        padding: 10px;
+        border-left: 4px solid #90c3d4;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+    .table th {
+        background-color: #90c3d4;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .table td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table tfoot {
+        font-weight: bold;
+        background-color: #f9f9f9;
+    }
+
+.counted {
+    border-left: 1px dashed #ccc;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+    .pagination button {
+        padding: 8px 15px;
+        background-color: #2c5aa0;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .pagination button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+    .pagination span {
+        font-weight: 500;
+    }
+
+.grandTotal {
+    text-align: right;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f5ff;
+    border: 1px solid #2c5aa0;
+}
+
+    .grandTotal h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 10px;
+}
+
+.printButton, .pdfButton {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.pdfButton {
+    background-color: #d32f2f;
+    color: white;
+}
+
+    .pdfButton:hover {
+        background-color: #b71c1c;
+    }
+
+.printButton {
+    background-color: #2c5aa0;
+    color: white;
+}
+
+    .printButton:hover {
+        background-color: #1e3d6f;
+    }
+
+/* Print styles */
+@media print {
+    .report {
+        padding: 0;
+        width: 100%;
+    }
+
+    .selector, .buttonGroup, .groupSelector, .pagination {
+        display: none;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .header {
+        page-break-after: avoid;
+    }
+
+    .group {
+        page-break-inside: avoid;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    /* Show all groups when printing */
+    .groupContent {
+        display: block !important;
+    }
+
+    .group {
+        display: block !important;
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .metadata {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .groupSelector {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .groupDropdown {
+        min-width: 100%;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+        .table th, .table td {
+            padding: 8px 5px;
+        }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttonGroup {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .printButton, .pdfButton {
+        flex: 1;
+        margin: 0 5px;
+    }
+
+    .pagination {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

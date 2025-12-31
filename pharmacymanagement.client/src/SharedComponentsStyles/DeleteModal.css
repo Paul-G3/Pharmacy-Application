@@ -1,0 +1,60 @@
+.DeleteModalGeneral {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-modal-content {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    animation: SuccessModalfadeIn 0.5s ease-in-out;
+}
+
+.delete-icon {
+    font-size: 9rem;
+    z-index: 14;
+    color: #b90e0a;
+    text-align: center;
+    animation: SuccessModal 2s infinite;
+}
+
+.delete-buttons-container
+{
+    display:flex;
+    justify-content:space-around;
+}
+
+.delete-button-modal-no {
+    background: forestgreen;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    opacity: 0.9;
+    transition:0.2s;
+}
+
+.delete-button-modal-no:hover,.delete-button-modal-yes:hover
+{
+    opacity:0.6;
+}
+
+.delete-button-modal-yes {
+    background: #b90e0a;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    opacity: 0.9;
+}
+

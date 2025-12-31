@@ -1,0 +1,106 @@
+.view-prescription
+{
+    padding:1.5rem 4em ;
+}
+
+.filter-inputs
+{ 
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    gap:1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.prescrription-file-customer {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.prescrription-file-customer:hover {
+    color: #116A6F;
+}
+
+#file-icon-table {
+    color: rgba(0,0,0,0.6);
+    font-size: 1.5rem;
+}
+
+.prescription-status-customer
+{
+    background-color:rgb(76, 255, 0, 0.2);
+    color:green;
+    border:none;
+    border-radius:15px;   
+}
+
+.prescription-status-customer-no {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.edit-prescription-input
+{
+    width:70%;
+}
+/*filter*/
+.filter-container-customer {
+    position: relative;
+}
+
+
+.filter-container-customer i
+{
+    position:absolute; 
+    left:5px;
+    top:2px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+
+#top-filter
+{
+    top:-3px;
+}
+
+
+.unprocessed-prescriptions-title {
+    color: #116A6F;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.show-edit {
+    display: block;
+}
+
+.edit-prescription, .delete-prescription {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #116A6F;
+    transition:0.2s ease-in;
+}
+
+.edit-prescription:hover i, .delete-prescription:hover i { 
+    color: orangered;
+}
+
+.edit-inputs-container
+{
+  padding:15px 5px 10px 10px;
+}
+
+
+
+
+@media screen and (min-width: 628px) {
+    .filter-inputs {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,16 @@
+.StockTable{
+    margin:auto;
+    width:90%;
+}
+.filter-input{
+    border:1px solid #116a6f;
+    border-radius:10px;
+    outline:none;
+}
+.add-search{
+    margin-top:1em;
+    margin-left:2.5em;
+}
+.add-search .search-input,.add-search .filter-input{
+    width:30%;
+}

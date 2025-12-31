@@ -1,0 +1,236 @@
+.dispense-log {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 91vw;
+    margin: 0 auto;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 400px !important;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.accordion-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion-section {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+    background: #2980b9;
+}
+
+.accordion-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.arrow {
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow.down {
+    transform: rotate(0deg);
+}
+
+.arrow.up {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 
+        max-height 0.4s ease-in-out, 
+        opacity 0.4s ease-in-out,
+        padding 0.4s ease-in-out;
+}
+
+.accordion-content.expanded {
+    padding: 20px;
+    opacity: 1;
+    height:fit-content;
+}
+
+.prescription-list {
+    height:fit-content;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.prescription-cards {
+    max-width: 80em;
+    max-height: fit-content;
+    margin: 2px;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.prescription-cards:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.prescription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.prescription-header h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.prescription-number {
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.prescription-details {
+    margin-bottom: 10px;
+}
+
+.prescription-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.medication-list {
+    margin: 5px 0;
+    padding-left: 12px;
+    font-size: 0.9em;
+    flex-grow: 0;
+}
+
+.medication-list li {
+    margin-bottom: 5px;
+}
+
+.medication-list section{
+    height:5em;
+    overflow-y:scroll;
+    padding:5px;
+    border-radius:5px;
+}
+
+.medication-list section:hover{
+   background-color: lightgreen;
+
+}
+
+.action-button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.collect-button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.collect-button:hover {
+    background-color: #27ae60;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #95a5a6;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #f0f0f0;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination button.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .prescription-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .accordion-header {
+        padding: 12px 15px;
+    }
+    
+    .accordion-header h2 {
+        font-size: 1.1em;
+    }
+}

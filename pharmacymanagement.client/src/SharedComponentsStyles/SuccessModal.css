@@ -1,0 +1,70 @@
+.sucessModalGeneral
+{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:12;
+    background-color:rgba(0,0,0,0.5);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.success-modal-content {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    animation: SuccessModalfadeIn 0.5s ease-in-out;
+}
+
+.succes-modal-icon {
+    font-size: 9rem;
+    z-index: 14;
+    color: forestgreen;
+    text-align: center;
+    animation: SuccessModal 2s infinite;
+}
+
+.success-caption-text
+{
+    font-size:1.3rem;
+    margin:1rem;
+}
+
+.ok-modal-button {
+    background-color: #116A6F;
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px 2em;
+    border: 3px solid #116A6F;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+
+@keyframes SuccessModal {
+    from
+    {
+       transform:scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes SuccessModalfadeIn {
+    from {
+        transform: scale(0.3);
+        opacity:0.5;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

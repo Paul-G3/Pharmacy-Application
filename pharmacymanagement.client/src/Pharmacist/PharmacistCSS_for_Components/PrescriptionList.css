@@ -1,0 +1,122 @@
+.prescription-page {
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.prescription-page h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.prescription-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius:20px;
+}
+
+.prescription-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-top:1px solid black;
+}
+
+.prescription-table th {
+    padding: 0.75rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+}
+
+.prescription-table-container{
+    padding-left:3.5em;
+    width:87vw;
+}
+
+.process-btn {
+    padding: 0.5rem 1rem;
+    background-color: #116A6F;
+    color: white;
+    border: 2px solid #116A6F;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+}
+
+.process-btn:hover {
+    color: #116A6F;
+    background-color: transparent;
+    color: #116A6F;  
+    border: 2px solid #116A6F;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;      
+}
+
+.pagination button {
+  background-color: #0056b3;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:disabled:hover {
+  background-color: #ccc;
+}
+
+.searchCustPrescr{
+    padding-left:4em;
+}
+
+.not-found-message {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.dispenseOpt {
+    background-color: palevioletred;
+    padding: 0.6em;
+    border-radius: 20px;
+}
+
+.dontDispense {
+    background-color: lightgreen;
+    padding: 0.6em;
+    border-radius: 20px;
+}
+
+.allergic-row {
+    background-color: #c7f5e3 !important; 
+    cursor: not-allowed;
+}
+
+.reject-icon {
+    color: red;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.reject-icon:hover{
+    font-size: 1.3em;
+
+}

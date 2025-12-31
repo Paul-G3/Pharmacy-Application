@@ -1,0 +1,190 @@
+.side-nav-container {
+    height: 100vh;
+    background-color: #116A6F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.5s ease-in-out;
+    overflow: hidden;
+    position: fixed;
+    width: 5em;
+    z-index:9;
+}
+.nav-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.active-link .nav-item {
+    background-color: white;
+    color: #fff;
+}
+/* Make the entire class declarations enforceable by adding !important to each property */
+.close-btn, .save-btn {
+    cursor: pointer !important;
+    border: 1px solid #116A6F !important;
+    font-size: medium !important;
+    background-color: var(--warning) !important;
+    padding: .5em 1em !important;
+    transition: all .2s ease-out !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+.close-btn{
+    background-color:#116A6F!important;
+}
+/* Hover states updated with !important as well */
+.save-btn:hover{
+    background-color: var(--danger) !important;
+    border: 1px solid #90c3d4 !important;
+}
+
+.close-btn:hover{
+    background-color: white !important;
+    color: #116A6F !important;
+}
+
+.active-link .nav-icon,
+.active-link .nav-label {
+    color: #116a6f !important;
+}
+
+.side-nav-container:hover {
+    cursor: pointer;
+    position:fixed;
+    width:13.2em;
+}
+
+/* PROFILE PICTURE */
+.profile-pic-container {
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 7em;
+}
+
+.profile-pic {
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    border:2px solid white;
+    top: -10px;
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.2s ease-in, transform 0.3s ease-in,top .3s ease;
+    transition-delay: 0s,.1s,0s,0s;
+}
+
+/*.side-nav-container:hover .profile-pic::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+    width: 120px;
+    height: 120px;*/
+/*    background-color: green;*/
+    /*border-radius: 50%;
+    opacity: 0;
+    animation: growBack 0.4s ease-out 0.4s forwards,top 0.4s ease;
+}*/
+.profile-initials {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: grey;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: font-size 0.4s ease, width 0.4s, height 0.4s;
+}
+
+/* Animate profile image grow back */
+/*@keyframes growBack {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.5);
+    }
+}*/
+
+.side-nav-container:hover .profile-initials {
+    font-size: 3em;
+    width: 3em;
+    height: 3em;
+}
+.side-nav-container:hover .profile-pic {
+    /*    width: 10em;
+    height: 10em;*/
+    transform: scale(2.5);
+    top: -40px
+}
+
+
+/* NAVIGATION ITEMS */
+.nav-items {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.nav-item {
+    align-items: center;
+    display: flex;
+    min-width: 0;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+.nav-item:hover{
+    background-color:#075D65
+}
+
+.nav-icon {
+    font-size: 20px;
+    color: #333;
+    flex-shrink: 0;
+    font-size: 2em;
+    color:white;
+}
+.link-no-style {
+    text-decoration: none;
+    color: inherit; /* Or specify your own, like white or black */
+}
+
+/* LABELS START HIDDEN */
+.nav-label {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    color:white;
+}
+
+/* On sidebar hover: show label */
+.side-nav-container:hover .nav-label {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.nav-items{
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.nav-items::-webkit-scrollbar {
+    display: none;
+}

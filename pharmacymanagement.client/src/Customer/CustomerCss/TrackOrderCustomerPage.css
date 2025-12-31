@@ -1,0 +1,74 @@
+ 
+.order-customer--card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    border-radius:15px;
+    width: 70%;
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    cursor:pointer;
+}
+
+.customer-order-details
+{
+    margin-bottom:0.7rem;
+}
+
+.order-number-customer {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #116A6F;
+    margin-right: 2rem;
+}
+.customer-order-status {
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.customer-clock-icon
+{
+    margin-left:0.5rem;
+    margin-right:0.2rem
+}
+
+.ordered-items-customer {
+    width: 100%;
+    min-height:50px;
+    max-height: 100px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    resize: vertical;
+    overflow: auto; /* Enables resizing */
+    margin-top:0.4rem;
+    margin-bottom:1rem;
+}
+
+.collect-order-container-customer
+{
+    text-align:center;
+}
+
+.collect-order-container-customer > button
+{
+     background-color: #116A6F;
+    color:white;
+    font-size:1.5rem;
+    padding: 5px 30px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.collect-order-container-customer > button:disabled {
+    cursor: not-allowed;   
+    opacity: 0.75; /* Slight transparency */
+}
+
+.total-order-customer {
+    text-align: right;
+    color: #116A6F;
+    font-size:1.2rem;
+}

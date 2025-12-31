@@ -1,0 +1,9 @@
+.subitems {
+    height: 0;
+    overflow: hidden;
+    display: block;
+    transition:height .3s ease-out
+}
+.subitems.expand{
+    height:35%;
+}

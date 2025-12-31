@@ -1,0 +1,56 @@
+.modal-background-general
+{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);
+    z-index:150;
+}
+
+.content-modal {
+    position: fixed;
+    top: 20vh;
+    left: 30vw;
+    right: 30vw;
+    background-color: rgb(255,255,255);
+    z-index: 151;
+    border-radius:10px;
+    padding:8px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.general-modal-title
+{
+    text-align:center;
+    border-bottom:1px solid gray;
+}
+
+.close-general-modal
+{
+    position:absolute;
+    top: 1px;
+    right:5px;
+    background-color:transparent;
+    border:none;
+    font-size:1.2rem; 
+    font-weight:500;
+    cursor:pointer;
+}
+
+.close-general-modal:hover
+{
+    color:orangered;
+}
+
+@keyframes fadeIn
+{
+    from
+    {
+        transform:scale(0.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
